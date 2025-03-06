@@ -1,0 +1,12 @@
+{% extends 'nav.html'%}
+{% block content%}
+
+<h1>Creacion de proyectos</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button>
+        Guardar
+    </button>
+</form>
+{% endblock %}

@@ -5,7 +5,7 @@ from django.utils import timezone
 # Create your models here.
 class Project (models.Model):
     name = models.CharField(max_length=200)
-    pub_date = models.DateTimeField("date_publishied")
+    pub_date = models.DateTimeField("date_publishied", auto_now_add=True)
     def __str__(self):
         return self.name
     def was_published_recently(self):
