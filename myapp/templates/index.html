@@ -1,9 +1,11 @@
 {% extends 'nav.html'%}
+{% load static %}
 
 {% block content%}
 
 <h1>{{title}} </h1>
-
+<p>Contecon es una empresa líder en la industria de la logística y operaciones portuarias, proporcionando servicios eficientes y confiables para garantizar una manipulación y transporte de carga sin problemas. Con un compromiso con la innovación y la satisfacción del cliente, Contecon continúa estableciendo el estándar en la industria.</p>
+<img src=" {% static 'contecon.png' %}" width="50%">
 <p> Created by: {{username}}</p>
 
 {% endblock %}
